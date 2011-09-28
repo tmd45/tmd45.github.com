@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<style type="text/css">
+			* { margin: 0; padding: 0; border: 0; }
+			
+			.wrapper {
+				width: 100%;
+				background: #fff; font-size: 12px; color: #333;
+			}
+			
+			div h3,p {
+				margin-bottom: 0.3em;
+			}
+			
+			.box {
+				position: relative;
+				margin: 30px 10px; padding: 10px;
+				border: 1px solid #ccc;
+				background: #eee;
+			}
+			
+			.demo {
+				position: relative;
+				float: left;
+				
+				border: 1px solid #4c1;
+				width: 300px;
+				margin: 10px; padding: 30px;
+				
+				-webkit-border-radius: 8px;	/* Safari,Google Chrome用 */
+				-moz-border-radius: 8px;	/* Firefox用 */
+				border-radius: 8px;        	/* CSS3草案 */
+				
+				-webkit-box-shadow: #666 0px 2px 5px;
+				-moz-box-shadow: #666 0px 2px 5px;
+				box-shadow: #666 0px 2px 5px;
+				
+				background: #ef9;
+				background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ef9), to(#ef9));
+				background: -moz-linear-gradient(#ef9, #6e3);
+				-pie-background: linear-gradient(#ef9, #6e3);
+				behavior: url(./PIE/PIE.htc);
+			}
+			
+			.demo2 {
+				position: relative;
+				float: left;
+				
+				border: 1px solid #4c1;
+				width: 300px;
+				margin: 10px; padding: 30px;
+				
+				-webkit-border-radius: 8px;	/* Safari,Google Chrome用 */
+				-moz-border-radius: 8px;	/* Firefox用 */
+				border-radius: 8px;        	/* CSS3草案 */
+				
+				-webkit-box-shadow: #666 0px 2px 5px;
+				-moz-box-shadow: #666 0px 2px 5px;
+				box-shadow: #666 0px 2px 5px;
+				
+				background: #ef9;
+				background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ef9), to(#ef9));
+				background: -moz-linear-gradient(#ef9, #6e3);
+				-pie-background: linear-gradient(#ef9, #6e3);
+			}
+			
+			.clearFix {
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+		
+			<div class="demo clearFix">
+				<h3>CSS3 デモ</h3>
+				<p>PIE.htcを使ってIEでもCSS3が適用されるようにしています。</p>
+				<p>角丸、背景のグラデーション、シャドーがキレイに表示されていますね。</p>
+				<p><br /><br /><br /><br /><br />（改行いっぱい）<br /><br /><br />文章が縦に伸びるとグラデーションはどうなるのかな？</p>
+			</div>
+			
+			<div class="demo2">
+				<h3>CSS3 デモ２</h3>
+				<p>PIE.htcを使用せずに同じスタイルを適用した場合です。</p>
+				<p>角丸、背景のグラデーション、シャドーは表示されずにCSS2レベルの表示になっていますね。</p>
+				<p><br /><br /><br /><br /><br />（改行いっぱい）<br /><br /><br />文章が縦に伸びたからといって特に何もありませんね。</p>
+			</div>
+			
+			<div class="box clearFix">
+				<h3>確認中のブラウザ</h3>
+				<script type="text/javascript">
+				<!--
+					document.write('<p>' + navigator.appName + '</p>');
+					document.write('<p>' + navigator.userAgent + '</p>');
+				-->
+				</script>
+			</div>
+			
+		</div>
+	</body>
+</html>
